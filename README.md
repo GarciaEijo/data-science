@@ -8,9 +8,10 @@
 graph TD
 
 A(Data Science Phases) --> B(Data collection)
-A --> C(Data analysis ''EDA'')
+A --> C(Data Exploration ''EDA'')
 A --> D(Data Preparation)
 A --> E(Predictive modelling)
+A --> F(Data visualization)
 
 ```
 
@@ -22,7 +23,7 @@ A --> E(Predictive modelling)
 </p>
 </details>
 
-<details><summary>Exploratory data analysis ''EDA'' </summary>
+<details><summary>Data Exploration ''EDA'' </summary>
 <p>
   
   * Descriptive Statistics
@@ -55,6 +56,20 @@ A --> E(Predictive modelling)
 </details>
 
 <details><summary>Predictive modelling</summary>
+<p>
+  
+  * Supervised Learning 
+    *  Ex
+  * Unsupervised Learning 
+  * Forecasting time series 
+  
+</p>
+</details>
+
+</p>
+</details>
+
+<details><summary>Data visualization</summary>
 <p>
   
   * Supervised Learning 
