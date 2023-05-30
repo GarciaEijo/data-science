@@ -4,26 +4,46 @@
 
 ###### In this work the main phases of a data science project are presentes and organized as follows,
 
+[comment]: <> ('theme': 'forest','themeVariables': {'primaryColor': "#ffcccc",'secondaryColor': "#fff0cc",'tertiaryColor': "#fff0f0" })
 ```mermaid
-graph TD
-
-A(Data Science Phases) --> B(Data collection)
-A --> C(Data Exploration ''EDA'')
-A --> D(Data Preparation)
-A --> E(Predictive modelling)
-A --> F(Data visualization)
-
+flowchart TD
+%%{init: {'theme':'dark'}}}%%
+    A(Project Phases) --> B(Data Collection)
+    A --> C(Data Exploration)
+    A --> D(Data Preparation)
+    A --> E(Machine Learning Model)
+    A --> F(Interactive Visualizations)
 ```
 
-<details><summary>Data collection</summary>
+<details><summary>1. Data Collection</summary>
 <p>
   
-  * Extracting information from exiting databases using SQL
+###### SQL, which stands for Structured Query Language, is a fundamental tool used in data science for managing and manipulating structured data stored in relational databases. It provides a standardized way to interact with databases and extract valuable insights from large datasets. Although SQL languages all share a basic structure, some of the specific commands and styles can differ slightly. Popular dialects include MySQL, SQLite, SQL Server, Oracle SQL, and more. 
+  
+```mermaid
+mindmap
+%%{init: {'theme':'neutral','themeVariables': {'primaryColor': "#ffcccc",'secondaryColor': "#fff0cc",'tertiaryColor': "#fff0f0"}}}%%
+  root((Data Collection))
+    sd
+    sdsd
+    sd
+```
+  
+```mermaid
+flowchart TD
+    %%{init: {'theme':'dark'}}}%%
+    A(SQL Query Structure) --> B(FROM)
+    B --> C(WHERE)
+    C --> D(GROUP BY)
+    D --> E(SELECT)
+    E --> EE(AGREGATE FUNCTION)
+    E --> F(SD)
+```
   
 </p>
 </details>
 
-<details><summary>Data Exploration ''EDA'' </summary>
+<details><summary>2. Data Exploration</summary>
 <p>
   
   * Descriptive Statistics
@@ -41,7 +61,7 @@ A --> F(Data visualization)
 </p>
 </details>
 
-<details><summary>Data Preparation</summary>
+<details><summary>3. Data Preparation</summary>
 <p>
   
   * Handling missing values
@@ -55,7 +75,7 @@ A --> F(Data visualization)
 </p>
 </details>
 
-<details><summary>Predictive modelling</summary>
+<details><summary>4. Machine Learning Models</summary>
 <p>
   
   * Supervised Learning 
@@ -69,7 +89,7 @@ A --> F(Data visualization)
 </p>
 </details>
 
-<details><summary>Data visualization</summary>
+<details><summary>5. Interactive Visualizations</summary>
 <p>
   
   * Supervised Learning 
