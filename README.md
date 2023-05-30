@@ -15,34 +15,44 @@ flowchart TD
     A --> F(Interactive Visualizations)
 ```
 
+[comment]: <> (--------------------------------------------------------------------------------------------------)
 <details><summary>1. Data Collection</summary>
 <p>
   
 ###### SQL, which stands for Structured Query Language, is a fundamental tool used in data science for managing and manipulating structured data stored in relational databases. It provides a standardized way to interact with databases and extract valuable insights from large datasets. Although SQL languages all share a basic structure, some of the specific commands and styles can differ slightly. Popular dialects include MySQL, SQLite, SQL Server, Oracle SQL, and more. 
-  
+ 
+##### What the query looks like
 ```mermaid
-mindmap
-%%{init: {'theme':'neutral','themeVariables': {'primaryColor': "#ffcccc",'secondaryColor': "#fff0cc",'tertiaryColor': "#fff0f0"}}}%%
-  root((Data Collection))
-    sd
-    sdsd
-    sd
-```
-  
-```mermaid
-flowchart TD
+flowchart LR
     %%{init: {'theme':'dark'}}}%%
-    A(SQL Query Structure) --> B(FROM)
+    A(SELECT) --> B(FROM)
     B --> C(WHERE)
     C --> D(GROUP BY)
-    D --> E(SELECT)
-    E --> EE(AGREGATE FUNCTION)
-    E --> F(SD)
+    D --> E(HAVING)
+    E --> F(ORDER BY)
+    F --> G(LIMIT)
 ```
-  
+##### How it's executed    
+```mermaid 
+   flowchart LR
+    AA(FROM) --> BB(WHERE)
+    BB --> CC(GROUP BY)
+    CC --> DD(HAVING)
+    DD --> EE(SELECT)
+    EE --> FF(ORDER BY)
+    FF --> GG(LIMIT)
+```
+1.1 WHERE CLAUSE
+   ###### The SQL WHERE clause is used to filter data based on specific conditions in a SELECT, UPDATE, or DELETE statement. It allows you to specify a condition that must be met for a row to be included in the result set or for an action to be performed.
+    
+    SELECT column1, column2, ...
+    FROM table_name
+    WHERE condition;
+     
 </p>
 </details>
 
+[comment]: <> (--------------------------------------------------------------------------------------------------)
 <details><summary>2. Data Exploration</summary>
 <p>
   
@@ -61,6 +71,7 @@ flowchart TD
 </p>
 </details>
 
+[comment]: <> (--------------------------------------------------------------------------------------------------)
 <details><summary>3. Data Preparation</summary>
 <p>
   
@@ -75,6 +86,7 @@ flowchart TD
 </p>
 </details>
 
+[comment]: <> (--------------------------------------------------------------------------------------------------)
 <details><summary>4. Machine Learning Models</summary>
 <p>
   
@@ -86,9 +98,7 @@ flowchart TD
 </p>
 </details>
 
-</p>
-</details>
-
+[comment]: <> (--------------------------------------------------------------------------------------------------)
 <details><summary>5. Interactive Visualizations</summary>
 <p>
   
