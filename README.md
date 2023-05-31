@@ -21,33 +21,23 @@ flowchart TD
   
 ###### SQL, which stands for Structured Query Language, is a fundamental tool used in data science for managing and manipulating structured data stored in relational databases. It provides a standardized way to interact with databases and extract valuable insights from large datasets. Although SQL languages all share a basic structure, some of the specific commands and styles can differ slightly. Popular dialects include MySQL, SQLite, SQL Server, Oracle SQL, and more. 
  
-##### What the query looks like
-```mermaid
-flowchart LR
-    %%{init: {'theme':'dark'}}}%%
-    A(SELECT) --> B(FROM)
-    B --> C(WHERE)
-    C --> D(GROUP BY)
-    D --> E(HAVING)
-    E --> F(ORDER BY)
-    F --> G(LIMIT)
-```
-##### How it's executed    
-```mermaid 
-   flowchart LR
-    AA(FROM) --> BB(WHERE)
-    BB --> CC(GROUP BY)
-    CC --> DD(HAVING)
-    DD --> EE(SELECT)
-    EE --> FF(ORDER BY)
-    FF --> GG(LIMIT)
-```
-1.1 WHERE CLAUSE
-   ###### The SQL WHERE clause is used to filter data based on specific conditions in a SELECT, UPDATE, or DELETE statement. It allows you to specify a condition that must be met for a row to be included in the result set or for an action to be performed.
-    
+* ##### What the query looks like
+    * ###### SELECT --> FROM --> WHERE --> GROUP BY --> HAVING --> ORDER BY --> LIMIT
+* ##### How it is executed
+    * ###### FROM --> WHERE --> GROUP BY --> HAVING --> SELECT --> ORDER BY --> LIMIT    
+
+    <details>
+    <summary>Subsection 1.1</summary>
+        
+    ##### Where
+        
+    ###### The SQL WHERE clause is used to filter data based on specific conditions in a SELECT, UPDATE, or DELETE statement. It allows you to specify a condition that must be met for a row to be included in the result set or for an action to be performed.
+
+    ```
     SELECT column1, column2, ...
     FROM table_name
     WHERE condition;
+    ```
      
 </p>
 </details>
